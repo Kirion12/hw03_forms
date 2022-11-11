@@ -32,9 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'posts.apps.PostsConfig',  # Добавленная запись
-    'users.apps.UsersConfig', # Зарегистрировал users app
-    'core.apps.CoreConfig', # Зарегистрировал core app
-    'about.apps.AboutConfig', # Зарегистрировал about app
+    'users.apps.UsersConfig',  # Зарегистрировал users app
+    'core.apps.CoreConfig',  # Зарегистрировал core app
+    'about.apps.AboutConfig',  # Зарегистрировал about app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
