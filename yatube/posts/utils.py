@@ -1,14 +1,9 @@
 from django.core.paginator import Paginator
 
-POST_QTY = 10
+POSTS_PER_PAGE = 10
 
 
 def get_paginator(queryset, request):
-    paginator = Paginator(queryset, POST_QTY)
+    paginator = Paginator(queryset, POSTS_PER_PAGE)
     page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return {
-        'paginator': paginator,
-        'page_number': page_number,
-        'page_obj': page_obj,
-    }
+    return paginator.get_page(page_number)
