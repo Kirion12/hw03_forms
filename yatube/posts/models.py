@@ -27,8 +27,8 @@ class Post(models.Model):
         verbose_name='Группа'
     )
 
-    def __str__(self):
-        return self.text
+    def __str__(self) -> str:
+        return self.text[:15]
 
 
 class Group(models.Model):
